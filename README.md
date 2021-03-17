@@ -1,2 +1,2 @@
 # FocusAnimal
-A helpful animal that helps you keep focused with this Chromium extension.
+A helpful animal that keeps you focused with this Chromium extension.
