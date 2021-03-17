@@ -3,12 +3,15 @@
  
   "name": "Focus Animal",
   "version": "0.1.0",
-  "description": "A helpfun animal the keeps you focused in this extension.",
+  "description": "A helpful animal the keeps you focused with this extension.",
+  "options_page": "options.html",
+  "permissions": [
+    "storage"
+  ],
  
   "content_scripts": [{
     "css": ["warningmodal.css"],
     "js": ["jquery-3.6.0.min.js", "warningmodal.js"],
-    "matches": ["https://facebook.com/*", "https://*.facebook.com/*"]
+    "matches": ["<all_urls>"]
   }]
- 
 }

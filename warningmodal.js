@@ -1,11 +1,8 @@
 var $myModal = $(document.createElement('div'))
 	.addClass("modal")
 	.attr('id', 'myModal');
-  
-$('body').append($myModal);
-
+  $('body').append($myModal);
 $('#myModal').append($('<div class="modal-content"><span class="close">&times;</span><p>Biztos?</p></div>'));
-
 $('#myModal').show();
 
 // Get the modal
@@ -14,7 +11,6 @@ var span = document.getElementsByClassName("close")[0];
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
-  //modal.style.display = "none";
   $('#myModal').hide();
 }
 
@@ -22,7 +18,6 @@ span.onclick = function() {
 window.onclick = function(event) {
   if (event.target == modal) {
 	 $('#myModal').hide();
-    //modal.style.display = "none";
   }
 }
 
