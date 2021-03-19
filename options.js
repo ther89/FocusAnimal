@@ -1,3 +1,12 @@
+var imgURL = chrome.extension.getURL('images/dog.jpg');
+document.getElementById('img_dog').src = imgURL;
+
+var imgURL = chrome.extension.getURL('images/cat.jpg');
+document.getElementById('img_cat').src = imgURL;
+
+var imgURL = chrome.extension.getURL('images/owl.jpg');
+document.getElementById('img_owl').src = imgURL;
+
 focusanimal = {};
 
 focusanimal.save_options = function() {

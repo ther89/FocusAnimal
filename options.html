@@ -1,34 +1,42 @@
 <html>
     <head>
         <title>Focus Animal Settings</title>
+        <link rel="stylesheet" href="options.css">
     </head>
     <body id="options_body">
-        <textarea id="focusanimal_allowed_urls" style="width:300px;height:100px;"></textarea><br/>
-        <span style="font-size:10pt">Enable focus animal?: </span>
-        <!-- <select id="focusanimal_image">
-            <option value="dog.jpg"></option>
-            <option value="cat.jpg"></option>
-            <option value="owl.jpg"></option>
-        </select> -->
+        <div>
+            <div><span style="font-size:10pt">Enabled URLs:</span></div>
+            <textarea id="focusanimal_allowed_urls" style="width:300px;height:100px;"></textarea>
+        </div>
+        
+        <div style="margin-top: 5px;">
+            <div><span style="font-size:10pt">Please select your focus animal:</span></div>
+            <label>
+                <input type="radio" name="focusanimal_image" value="dog.jpg" />
+                <img class="options_image" id="img_dog" />
+            </label>
+            
+            <label>
+                <input type="radio" name="focusanimal_image" value="cat.jpg" />
+                <img class="options_image" id="img_cat" />
+            </label>
 
-        <label>
-            <input type="radio" name="focusanimal_image" value="dog.jpg" />
-            <img id="img_dog" />
-          </label>
-          
-          <label>
-            <input type="radio" name="focusanimal_image" value="cat.jpg" />
-            <img id="img_cat" />
-          </label>
+            <label>
+                <input type="radio" name="focusanimal_image" value="owl.jpg" />
+                <img class="options_image" id="img_owl" />
+            </label>
+        </div>
 
-          <label>
-            <input type="radio" name="focusanimal_image" value="owl.jpg" />
-            <img id="img_owl" />
-          </label>
+        <div style="margin-top: 5px;">
+            <span style="font-size:10pt">Enable focus animal?: </span>
+            <input type="checkbox" id="focusanimal_enabled" />
+        </div>
+        
+        <div style="margin-top: 5px;">
+            <button id="options_button">Save settings</button>
+        </div>
 
-        <input type="checkbox" id="focusanimal_enabled" />
         <div id="status"></div>
-        <button id="options_button">Save settings</button>
     </body>
     <script type="text/javascript" src="options.js"></script>
 </html>

@@ -28,7 +28,7 @@ chrome.storage.local.get({
     .attr('id', 'myModal');
   $('body').append($myModal);
   $('#myModal').append($('<div class="modal-content">'+
-  '<span class="close">&times;</span><p>Biztos?</p>'+
+  '<span class="close">&times;</span><p>Are you sure you have time for this?</p>'+
   '<img id="focusanimal_image_display" /></div>'));
   
   var imgURL = chrome.extension.getURL('images/' + imageFileName);
