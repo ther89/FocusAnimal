@@ -5,8 +5,29 @@
     <body id="options_body">
         <textarea id="focusanimal_allowed_urls" style="width:300px;height:100px;"></textarea><br/>
         <span style="font-size:10pt">Enable focus animal?: </span>
-            <input type="checkbox" id="focusanimal_enabled"/>
-            <div id="status"></div>
+        <!-- <select id="focusanimal_image">
+            <option value="dog.jpg"></option>
+            <option value="cat.jpg"></option>
+            <option value="owl.jpg"></option>
+        </select> -->
+
+        <label>
+            <input type="radio" name="focusanimal_image" value="dog.jpg" />
+            <img id="img_dog" />
+          </label>
+          
+          <label>
+            <input type="radio" name="focusanimal_image" value="cat.jpg" />
+            <img id="img_cat" />
+          </label>
+
+          <label>
+            <input type="radio" name="focusanimal_image" value="owl.jpg" />
+            <img id="img_owl" />
+          </label>
+
+        <input type="checkbox" id="focusanimal_enabled" />
+        <div id="status"></div>
         <button id="options_button">Save settings</button>
     </body>
     <script type="text/javascript" src="options.js"></script>
